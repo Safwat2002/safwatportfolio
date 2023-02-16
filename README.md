@@ -1,6 +1,6 @@
 # safwatportfolio
 ##main points for this project
-###flexbox{
+### flexbox{
 dispaly:flex;
 flex-direction:column; // the direction is row by default
 justify-content: center,space-between; // this align content according to main-axis
