@@ -11,7 +11,7 @@ column-gap: // the space between columns in flex box content
 
 }
 
-###girdsystem{
+### girdsystem{
 display:grid;
 grid-templeate-columns: repeat(n, 1fr); 
 }
@@ -26,7 +26,7 @@ we user var(--varName) to get the variable value
  ### hsl( , , , )
  
  
- ##Some Important Websites 
+ ## Some Important Websites 
 ### Google Fonts
 ### Box Icon
 ### EmailJs
