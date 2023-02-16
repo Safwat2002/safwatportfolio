@@ -12,6 +12,21 @@ window.addEventListener("scroll", () => {
   document.querySelector(".navbar").classList.remove("open-menu");
 });
 
+/* This Code Is For Change Background for active navbar link */
+window.onload = function () {
+  document.getElementById("homelink").classList.add("active-link");
+};
+window.onhashchange = function () {
+  let hash = window.location.hash;
+  hash = hash.slice(1).concat("link");
+
+  let links = document.querySelectorAll(".nav-link");
+  for (let i = 0; i < links.length; i++) {
+    links[i].classList.remove("active-link");
+  }
+  document.getElementById(hash).classList.add("active-link");
+};
+
 // Swiper add for Reviews Section
 var swiper = new Swiper(".reviews-content", {
   spaceBetween: 30,
@@ -38,7 +53,7 @@ function validate() {
   let message = document.querySelector(".message");
   let send_btn = document.querySelector(".send-btn");
 
-  console.log(name, email, message);
+  //  console.log(name, email, message);
 
   send_btn.addEventListener("click", (e) => {
     e.preventDefault();

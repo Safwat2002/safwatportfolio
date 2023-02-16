@@ -93,6 +93,11 @@ header {
   transition: 0.3s all linear;
 }
 
+.active-link {
+  color: var(--main-color);
+  background: var(--container-color);
+}
+
 .menu-icon {
   display: none; /*Must be flex in media query*/
   flex-direction: column;
