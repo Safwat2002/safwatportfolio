@@ -1,5 +1,5 @@
 # safwat portfolio
-##main points for this project
+## main points for this project
 ### flexbox{
 dispaly:flex;
 flex-direction:column; // the direction is row by default
@@ -16,7 +16,8 @@ display:grid;
 grid-templeate-columns: repeat(n, 1fr); 
 }
 
-### global variables are defined in the root selector and every variable name must begin with --
+### global variables 
+are defined in the root selector and every variable name must begin with --
 
 :root{ // this is root selector
 --varName: value;
