@@ -53,7 +53,7 @@ li {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 0%;
   height: 5px;
   background-color: var(--main-color);
 }
