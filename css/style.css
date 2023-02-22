@@ -49,6 +49,15 @@ li {
 
 /* WebSite Header Section */
 
+.progress {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+  background-color: var(--main-color);
+}
+
 .header-background-controller {
   background-color: var(--box-color);
 }
@@ -524,11 +533,15 @@ header {
 html::-webkit-scrollbar {
   width: 0.8rem;
   background: transparent;
+  max-height: 50%;
 }
 
 html::-webkit-scrollbar-thumb {
   background: #292d3f;
   border-radius: 1rem;
+}
+html::-webkit-scrollbar-track-piece:start {
+  background: transparent;
 }
 
 /* Responsive Desgin */

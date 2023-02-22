@@ -12,6 +12,23 @@ window.addEventListener("scroll", () => {
   document.querySelector(".navbar").classList.remove("open-menu");
 });
 
+/* this section is for top of the page progress page */
+
+function progressBar() {
+  let bar = document.querySelector(".progress");
+
+  let fullHeight = document.documentElement.scrollHeight;
+  let seenHeight = document.documentElement.clientHeight;
+
+  let avilableForScroll = fullHeight - seenHeight;
+
+  window.addEventListener("scroll", () => {
+    let width = (window.scrollY / avilableForScroll) * 100;
+    bar.style.width = width + "%";
+  });
+}
+progressBar();
+
 /* This Code Is For Change Background for active navbar link */
 window.onload = function () {
   document.getElementById("homelink").classList.add("active-link");
