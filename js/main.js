@@ -129,7 +129,7 @@ window.addEventListener("scroll", () => {
 // footer inactive links
 
 function commingSoon() {
-  let destination = document.querySelector(".footer").children[1].children[1];
+  let destination = document.querySelector(".footer").children[1].children[1].concat(document.querySelector(".portfolio a"));
   let links = destination.children;
 
   for (var i = 0; i < links.length; i++) {
