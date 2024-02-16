@@ -129,11 +129,12 @@ window.addEventListener("scroll", () => {
 // footer inactive links
 
 function commingSoon() {
-  let destination = document.querySelector(".footer").children[1].children[1].concat(document.querySelector(".portfolio a"));
-  let links = destination.children;
+  let destination1 = document.querySelector(".footer").children[1].children[1].children;
+  let destination2 = document.querySelectorAll(".portfolio-overlay a");
+  let destination = [...destination1 , ...destination2];
 
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", () => {
+  for (var i = 0; i < destination.length; i++) {
+    destination[i].addEventListener("click", () => {
       swal({
         title: "Comming Soom",
         text: "This Feature Will Be Added Soon, Thanks For Your Participation",

@@ -15,7 +15,7 @@
   --main-color: #647bff;
   --body-color: #090a1a;
   --container-color: #171b3c;
-  --heading-color: $222321;
+  --heading-color: #222321;
   --box-color: #0d0f26;
   --bg-color: #fff;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  padding: 3rem 0 2rem;
+  padding: 2rem 0 2rem;
 }
 
 a {
@@ -58,9 +58,10 @@ li {
   background-color: var(--main-color);
 }
 
-.header-background-controller {
-  background-color: var(--box-color);
-}
+/* .header-background-controller {
+  here the background of the header is changed when scroll 
+  you can put the background attribute in the header selector here to activate 
+} */
 
 header {
   position: fixed;
@@ -68,13 +69,14 @@ header {
   left: 0px;
   width: 100%;
   z-index: 100;
+  background-color: var(--box-color);
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 12px 0;
 }
 
 .logo {
@@ -205,13 +207,14 @@ header {
   transition: 0.3 all linear;
 }
 
-/* About Section */
+/************************ About Section ************************/
+
 .about {
-  min-height: 600px;
+  min-height: 350px;
   background-color: var(--box-color);
 }
 .heading {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--main-color);
   text-align: center;
   text-transform: uppercase;
@@ -221,7 +224,7 @@ header {
 .about .about-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-left: 1.5rem;
 }
 
@@ -230,21 +233,21 @@ header {
 }
 
 .about .about-content .about-text p {
-  line-height: 2rem;
-  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   word-spacing: 0.3rem;
   margin-bottom: 1.2rem;
 }
 
 .about .about-content .about-data .btn {
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: inline-flex;
   column-gap: 0.5rem;
   align-items: center;
   background-color: var(--main-color);
   color: var(--bg-color);
-  padding: 12px 16px;
+  padding: 10px 13px;
   margin-top: 1.3rem;
   border-radius: 0.4rem;
 }
@@ -273,7 +276,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: var(--container-color);
   border-radius: 0.8rem;
 }
@@ -284,7 +287,7 @@ header {
 }
 
 .services .services-box .bx {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   border-radius: 5rem;
   border: 2px dashed var(--main-color);
@@ -292,14 +295,17 @@ header {
 }
 
 .services .services-box h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
   color: var(--main-color);
 }
 
-/* Portfolio */
+/***************************** Portfolio *************************************/
 
+.portfolio{
+  width:70%;
+}
 .portfolio .heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .portfolio-content {
   display: grid;
@@ -363,7 +369,7 @@ header {
   width: 100%;
 }
 .reviews .heading {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .swiper-pagination-bullet {
   background-color: #fff;
@@ -387,7 +393,7 @@ header {
 
 .reviews .review-box p {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -410,29 +416,30 @@ header {
 
 /* Contact Form */
 .contact h2 {
-  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .contact-form {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
-  width: 100%;
+  width: 50%;
   display: grid;
   row-gap: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 15px;
+  padding: 12px;
   background: var(--container-color);
   outline: none;
   border: none;
   border-radius: 1rem;
   color: var(--bg-color);
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .contact-form textarea {
-  height: 200px;
+  height: 150px;
 }
 .contact-form input:focus,
 .contact-form textarea:focus {
@@ -443,7 +450,7 @@ header {
   background-color: var(--main-color);
   width: 30%;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 520;
   text-transform: uppercase;
 }
