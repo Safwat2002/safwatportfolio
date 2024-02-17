@@ -125,7 +125,7 @@ window.addEventListener("scroll", () => {
 
 function commingSoon() {
   let destination1 = document.querySelector(".footer").children[1].children[1].children;
-  let destination2 = document.querySelectorAll(".portfolio-overlay a");
+  let destination2 = document.querySelectorAll(".portfolio-overlay a").slice(2);
   let destination = [...destination1 , ...destination2];
 
   for (var i = 0; i < destination.length; i++) {
