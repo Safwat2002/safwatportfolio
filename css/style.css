@@ -83,6 +83,7 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--main-color);
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -261,7 +262,7 @@ header {
   font-size: 2rem;
 }
 
-/* Services Section */
+/*************************************** Services Section **************************************/
 
 .services .heading {
   margin-bottom: 2rem;
@@ -299,6 +300,10 @@ header {
   color: var(--main-color);
 }
 
+.services p{
+  font-size:1rem
+}
+
 /***************************** Portfolio *************************************/
 
 .portfolio{
@@ -316,12 +321,13 @@ header {
 .portfolio-box {
   position: relative;
   width: 100%;
+  height: 200px;
   border-radius: 1rem;
   overflow: hidden;
 }
 .portfolio-box img {
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .portfolio-overlay {
@@ -338,10 +344,12 @@ header {
 }
 
 .portfolio-overlay h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--bg-color);
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: .8rem;
+  text-align: center;
+  padding:0.5rem;
 }
 
 .portfolio-overlay .bx {
@@ -362,7 +370,7 @@ header {
   transition: 1s all ease;
 }
 
-/* Reviews Section */
+/******************************************* Reviews Section ******************************************/
 .reviews {
   max-width: 750px;
   margin: 0px auto;
@@ -414,11 +422,8 @@ header {
   width: 10px;
 }
 
-/* Contact Form */
-.contact h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+/************************************************ Contact Form ******************************************/
+
 .contact-form {
   max-width: 500px;
   margin: auto;
@@ -460,7 +465,7 @@ header {
   transition: 0.3s all linear;
 }
 
-/* Footer Section */
+/*************************************** Footer Section *****************************************/
 
 .footer {
   display: grid;
@@ -510,9 +515,10 @@ header {
   text-align: center;
 }
 
-/* Scroll To Top Icon */
+/******************************** Scroll To Top Icon ****************************************/
 .scroll-top {
   position: fixed;
+  z-index: 100;
   bottom: -100%;
   right: -100%;
 }
@@ -530,7 +536,7 @@ header {
 }
 
 .show-scroll-top {
-  /* This Will added to scroll-top element when scroll using js */
+  /* This Will added to scroll-top element on scroll even occur, using js */
   bottom: 2rem;
   right: 2rem;
   transition: 0.3s;
@@ -551,7 +557,7 @@ html::-webkit-scrollbar-track-piece:start {
   background: transparent;
 }
 
-/* Responsive Desgin */
+/************************************ Responsive Desgin *************************************/
 @media (max-width: 990px) {
   .container {
     margin: 0 auto;
@@ -559,7 +565,7 @@ html::-webkit-scrollbar-track-piece:start {
   }
 
   .nav {
-    padding: 10px 0px;
+    padding: 15px 0px;
   }
 }
 
@@ -570,7 +576,7 @@ html::-webkit-scrollbar-track-piece:start {
   }
 
   .logo {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .portfolio-overlay h2 {
     font-size: 1.5rem;
@@ -605,7 +611,7 @@ html::-webkit-scrollbar-track-piece:start {
   }
 
   .portfolio-overlay h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .portfolio-overlay .bx {
@@ -620,7 +626,7 @@ html::-webkit-scrollbar-track-piece:start {
   }
 
   .contact {
-    width: 80%;
+    width: 90%;
   }
 
   .footer {
@@ -649,11 +655,15 @@ html::-webkit-scrollbar-track-piece:start {
     right: 0;
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+
+  .contact-form textarea{
+    max-height: 100px;
+  }
 }
 
 @media (max-width: 590px) {
   .heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .home {
     min-height: 400px;
@@ -691,14 +701,9 @@ html::-webkit-scrollbar-track-piece:start {
   .portfolio-overlay .bx {
     font-size: 1.5rem;
   }
-
   .contact input {
     height: 2.5rem;
     font-size: 0.8rem;
-  }
-
-  .contact .heading {
-    margin-top: -50px;
   }
 
   .contact textarea {
@@ -710,6 +715,11 @@ html::-webkit-scrollbar-track-piece:start {
     font-size: 1rem;
     font-weight: 510;
     padding: 0px;
+  }
+
+  .contact-form{
+    width: 100%;
+    padding:0.5rem
   }
 }
 
@@ -736,6 +746,7 @@ html::-webkit-scrollbar-track-piece:start {
     width: 100px;
     height: 100px;
   }
+
 }
 
 @media (max-width: 450px) {
@@ -759,4 +770,9 @@ html::-webkit-scrollbar-track-piece:start {
   .navbar {
     width: 100%;
   }
+
+  .portfolio-box{
+    height: 180px;
+  }
+
 }

@@ -17,13 +17,8 @@ window.addEventListener("scroll", () => {
 function progressBar() {
   let bar = document.querySelector(".progress");
 
-  let fullHeight = document.documentElement.scrollHeight;
-  let seenHeight = document.documentElement.clientHeight;
-
-  let avilableForScroll = fullHeight - seenHeight;
-
   window.addEventListener("scroll", () => {
-    let width = (window.scrollY / avilableForScroll) * 100;
+    let width = (window.scrollY / (document.body.clientHeight - window.innerHeight)) * 100;
     bar.style.width = width + "%";
   });
 }
