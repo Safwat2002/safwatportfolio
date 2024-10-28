@@ -35,7 +35,7 @@ we user var(--varName) to get the variable value
 ### swiperjs (for cursol)
 
 
-```
+``` javascript
 import Curve as cv
 
 ```
