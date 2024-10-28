@@ -33,3 +33,9 @@ we user var(--varName) to get the variable value
 ### EmailJs
 ### SweetAlert (swal)
 ### swiperjs (for cursol)
+
+
+```
+import Curve as cv
+
+```
